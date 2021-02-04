@@ -1,3 +1,9 @@
+/**Palindromes Project
+ * @author Dawson Boyd
+ * @version Spring 2021
+ * CSci 2001
+ */
+
 import java.util.Scanner;
 
 public class Palindromes {

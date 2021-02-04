@@ -10,23 +10,27 @@ public class TwoBiggest {
 
     public static void main(String[] args) {
         //Declaring and instantiating ints. Setting min values
-        int n, biggest=Integer.MIN_VALUE, secondBig=Integer.MIN_VALUE;
+        int n, biggest = Integer.MIN_VALUE, secondBig = Integer.MIN_VALUE;
 
         //Loop to input all numbers and set values for biggest
-        for (int i=0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
 
             Scanner input = new Scanner(System.in);
             System.out.println("Enter a number:");
-            n=input.nextInt();
+            n = input.nextInt();
 
             if (n > biggest) {
-                secondBig=biggest;
-                biggest=n;
+                secondBig = biggest;
+                biggest = n;
+
+
+            }
+            else if (secondBig < n && biggest > secondBig) {
+                secondBig = n;
             }
         }
-
-        //Displaying results
-        System.out.println("Largest: " + biggest);
-        System.out.println("Second largest: " + secondBig);
+            //Displaying results
+            System.out.println("Largest: " + biggest);
+            System.out.println("Second largest: " + secondBig);
+        }
     }
-}
