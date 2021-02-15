@@ -1,3 +1,9 @@
+/**Employee Project
+ * @author Dawson Boyd
+ * @version Spring 2021
+ * CSci2001
+ */
+
 public class EmployeeTest {
 
     public static void main(String[] args) {

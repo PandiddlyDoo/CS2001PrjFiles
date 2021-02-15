@@ -1,4 +1,9 @@
-import java.util.Arrays;
+/**Account Project
+ * @author Dawson Boyd
+ * @version Spring 2021
+ * CSci2001
+ */
+
 import java.util.Scanner;
 
 public class AccountTest {

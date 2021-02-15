@@ -1,3 +1,9 @@
+/**Invoice MVC Project
+ * @author Dawson Boyd
+ * @version Spring 2021
+ * CSci2001
+ */
+
 public class InvoiceTest {
     public static void main(String[] args) {
         InvoiceView  view = new InvoiceView();
