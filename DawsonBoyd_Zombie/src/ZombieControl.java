@@ -62,6 +62,7 @@ public class ZombieControl implements ActionListener {
         view.getOutputArea().append("\nOh no!! Everyone died! D:");
     }
 
+    //ActionPerformed to allow for user input.
     @Override
     public void actionPerformed(ActionEvent e) {
         view.getOutputArea().append("\n");

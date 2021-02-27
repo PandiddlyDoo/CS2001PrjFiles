@@ -19,6 +19,7 @@ public class ApocalypseSimulator {
         control.startOfGame(Constants.DAYS,Constants.MIN_ZOMBIES,Constants.MAX_ZOMBIES,Constants.FOOD, Constants.PEOPLE);
     }
 
+    //Sleep method to spawn zombies, initiate combat anc check for Win/loss conditions.
     public void sleep(){
 
         if(Constants.DAYS>0 && Constants.PEOPLE>0 && Constants.FOOD>0){
@@ -34,7 +35,7 @@ public class ApocalypseSimulator {
             control.survivalMessage();
         }
 
-        //Loss conditions
+        //win/loss conditions
         if (Constants.DAYS==0){
             control.winMessage();
         }

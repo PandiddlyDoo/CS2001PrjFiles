@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
+//GUI Class untouched from lecture files
 
 public class ZombieFrame extends JFrame {
     private JPanel inputPanel, outputPanel, titlePanel;
