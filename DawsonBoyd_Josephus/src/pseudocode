@@ -1,4 +1,4 @@
-View does it's own thing and we use getters and setters
+]View does it's own thing and we use getters and setters
 Main only runs the initial frame ActionListener starts the model
 
 The model:

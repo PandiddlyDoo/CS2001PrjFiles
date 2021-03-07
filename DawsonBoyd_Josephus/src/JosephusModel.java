@@ -2,7 +2,8 @@ import java.util.Arrays;
 
 public class JosephusModel {
 
-    JosephusController c;
+    JosephusView frame = new JosephusView();
+    JosephusController c = new JosephusController(frame, this);
 
     public void Josephus(int start, int skip, int people) {
 
@@ -34,36 +35,48 @@ public class JosephusModel {
                 circle[current] = false;
                 kill = skip;
                 remaining--;
-                System.out.println(current);
+                c.deathMessage(current);
+                current++;
+            } else{
                 current++;
             }
         }
 
         //While more than 1 survivor
         while (remaining > 1) {
-            //setting index to 0 to loop through again
-            current=0;
+            //setting index to 0 to loop through again I believe this is where my problem is since it appears to only loop through once.
+
             //Iterates through entire array once
-            for(int i=0; i<circle.length; i++){
+            for(int i=0; i<=circle.length; i++){
+
+                if (current==circle.length){
+                    current=0;
+                }
+
                 if (kill > 1) {
                         //skipping over dead people
                     if (!circle[current]) {
                         current++;
+                        System.out.println("skip:"+current+" "+remaining+"remaining");
                         //counting alive person and counting down until kill
                     } else if (circle[current]) {
                         kill--;
                         current++;
+                        System.out.println("count:"+current+" "+remaining+"remaining");
                     }
                     //Killing when kill counter finishes
                 } else if (kill == 1 && circle[current]) {
                     circle[current] = false;
                     kill = skip;
-                    remaining--;
-                    System.out.println(current+" second loop");
+                    c.deathMessage(current);
                     current++;
+                    remaining--;
+                    System.out.println("kill:"+current+" "+remaining+"remaining");
 
+                    //This is here in case you  end up with kill == 1 and cant find an alive person
+                } else if(kill==1 && !circle[current]){
+                    current++;
                 }
-
             }
         }
     }

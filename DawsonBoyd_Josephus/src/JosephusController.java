@@ -11,13 +11,10 @@ public class JosephusController implements ActionListener {
         v.getSubmitButton().addActionListener(this);
     }
 
-//    public void deathMessage(int dead){
-//        v.getResults().append("\nNumber "+dead+" has died.");
-//    }
-//
-//    public void lastMessage(int safe){
-//        v.getResults().append("\nNumber "+safe+" is safe.");
-//    }
+  public void deathMessage(int dead){
+       v.getOutputArea().append("\n"+dead+" has died");
+   }
+
 
     @Override
     public void actionPerformed(ActionEvent e) {
