@@ -1,0 +1,29 @@
+View does it's own thing and we use getters and setters
+Main only runs the initial frame ActionListener starts the model
+
+The model:
+
+Create array with k people
+populate array with k "true" values
+
+the algorithm... if you are seeing this its likely it didn't work. With this project in particular I kept myself from looking up a solution online.
+I have seen this problem solved mathematically before and could have done a simple solution with mod 2 and loops but I wanted to solve it specifically using arrays by setting dead people to "false".
+This is what I came up with.
+
+While number of people left > 1{
+
+    look through entire array{
+
+    if false ignore
+
+    if true count down a counter of people left until someone dies
+
+    when counter until death finishes{
+
+        kill current person
+        }
+    }
+}
+
+after only 1 person remains return the index the searcher stopped on. This should be the safe seat.
+Push that value to the controller. The controller would then write the safe seat on the output panel.

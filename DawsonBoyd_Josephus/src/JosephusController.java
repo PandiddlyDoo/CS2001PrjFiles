@@ -11,6 +11,14 @@ public class JosephusController implements ActionListener {
         v.getSubmitButton().addActionListener(this);
     }
 
+//    public void deathMessage(int dead){
+//        v.getResults().append("\nNumber "+dead+" has died.");
+//    }
+//
+//    public void lastMessage(int safe){
+//        v.getResults().append("\nNumber "+safe+" is safe.");
+//    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         m.Josephus(Integer.parseInt(v.getStartField().getText()),  Integer.parseInt(v.getSkipField().getText()), Integer.parseInt(v.getPeopleField().getText()));
