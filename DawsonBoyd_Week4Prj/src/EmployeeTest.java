@@ -8,7 +8,7 @@ public class EmployeeTest {
 
     public static void main(String[] args) {
         Employee me = new Employee("Dawson", "Boyd", 700);
-        Employee you = new Employee("Charles", "Gorrill", 5000);
+        Employee you = new Employee("Charles", "Gorrill", 6000);
 
         //Displaying yearly salary without raise
         System.out.printf("My yearly salary: %.2f%n", (me.getSalary()*12));

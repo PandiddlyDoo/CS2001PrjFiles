@@ -1,0 +1,27 @@
+7.22 a)
+xx xx 45 34 43 xx xx xx
+46 01 32 03 36 05 42 07
+xx 10 35 44 33 08 37 xx
+xx 31 02 09 04 25 06 41
+11 xx 13 24 15 40 17 38
+xx 23 30 xx 28 19 26 xx
+xx 12 21 14 xx 16 39 18
+22 xx xx 29 20 27 xx xx
+
+backed myself into a corner.. really started to struggle around 25 I figured I'd make it around halfway so I did pretty good
+
+7.23 d)
+The accessibility heuristic version took a lot more effort and brain power. luckily the book gave us the accessibility numbers
+but we still needed to do a lot more juggling. I wouldn't say either algorithm was too difficult to develop but at least the
+accessibility version HAS an algorithm... the brute force version just throws numbers at the problem until it's happy.
+Both versions actually took about the same amount of computing power from what I could tell in task manager.
+IntelliJ takes a lot of memory on it's own so I couldn't see the real effects on that. Obviously we are certain of our
+probability with the heuristic approach because the puzzle is truly "solved" for every start. With the brute force approach
+we are just taking thousands of guesses. I think there is a time and a place for brute forcing. There are puzzles out in the
+real world that we dont have the answers to that computers can solve. That being said, when we have a problem that we can
+gather information from enough to form an algorithm, we can be a lot more elegant in solving the problem. Even with that though,
+sometimes its hard to see the solution until after the problem is solved. If someone held a gun to my head and said give me a knight's
+tour in 1 hour or you die before I did this project I would have gone brute force. For a computer even 3 million attempts is a small number.
+
+
+Sidenote on 7.22 a) I did that inital one before starting this project. After completing it I can now get consistent 50+ and have even solved one. :D
